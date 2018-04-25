@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Matrix Calculator</string>
+    <string name="banner_ad_unit_id">ca-app-pub-7224624747847283/6227792156</string>
+
+    <string name="rango">Rank</string>
+    <string name="determinante">Determinant</string>
+    <string name="inversa">Inverse</string>
+    <string name="trasposta">Transpose</string>
+</resources>

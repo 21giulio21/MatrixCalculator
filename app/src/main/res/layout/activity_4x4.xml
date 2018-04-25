@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/sfondo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintLeft_toLeftOf="parent"
+        ads:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/BottoneT"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/transposta"
+        app:layout_constraintBottom_toTopOf="@+id/BottoneR"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/bottoneD"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/determinante"
+        app:layout_constraintBottom_toTopOf="@+id/BottoneI"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/BottoneI"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/inversa"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/BottoneR"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/rango"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <EditText
+        android:id="@+id/quattroXquattro11"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+    <EditText
+        android:id="@+id/quattroXquattro21"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_column="0"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_row="1"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/quattroXquattro11" />
+
+    <EditText
+        android:id="@+id/quattroXquattro31"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_column="0"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="8dp"
+        android:layout_row="2"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        app:layout_constraintBottom_toTopOf="@+id/quattroXquattro41"
+        app:layout_constraintStart_toStartOf="@+id/imageView4" />
+
+    <EditText
+        android:id="@+id/quattroXquattro41"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_column="0"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="8dp"
+        android:layout_row="3"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4" />
+
+    <EditText
+        android:id="@+id/quattroXquattro12"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_column="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_row="0"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        app:layout_constraintStart_toEndOf="@+id/quattroXquattro11"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+    <EditText
+        android:id="@+id/quattroXquattro22"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_column="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_row="1"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        app:layout_constraintStart_toEndOf="@+id/quattroXquattro21"
+        app:layout_constraintTop_toBottomOf="@+id/quattroXquattro12" />
+
+    <EditText
+        android:id="@+id/quattroXquattro32"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_column="1"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_row="2"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        app:layout_constraintBottom_toTopOf="@+id/quattroXquattro42"
+        app:layout_constraintStart_toEndOf="@+id/quattroXquattro31" />
+
+    <EditText
+        android:id="@+id/quattroXquattro42"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_column="1"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_row="3"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/quattroXquattro41" />
+
+    <EditText
+        android:id="@+id/quattroXquattro13"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_column="2"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_row="0"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        app:layout_constraintEnd_toStartOf="@+id/quattroXquattro14"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+    <EditText
+        android:id="@+id/quattroXquattro23"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_column="2"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_row="1"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        app:layout_constraintEnd_toStartOf="@+id/quattroXquattro24"
+        app:layout_constraintTop_toBottomOf="@+id/quattroXquattro13" />
+
+    <EditText
+        android:id="@+id/quattroXquattro33"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_column="2"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_row="2"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        app:layout_constraintBottom_toTopOf="@+id/quattroXquattro43"
+        app:layout_constraintEnd_toStartOf="@+id/quattroXquattro34" />
+
+    <EditText
+        android:id="@+id/quattroXquattro43"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_column="2"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_row="3"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toStartOf="@+id/quattroXquattro44" />
+
+    <EditText
+        android:id="@+id/quattroXquattro14"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_column="3"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_row="0"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+    <EditText
+        android:id="@+id/quattroXquattro24"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_column="3"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_row="1"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/quattroXquattro14" />
+
+    <EditText
+        android:id="@+id/quattroXquattro34"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_column="3"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_row="2"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        app:layout_constraintBottom_toTopOf="@+id/quattroXquattro44"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4" />
+
+    <EditText
+        android:id="@+id/quattroXquattro44"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_column="3"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_row="3"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="5"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4" />
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/scxhemaquattroperquattro" />
+
+
+</android.support.constraint.ConstraintLayout>
